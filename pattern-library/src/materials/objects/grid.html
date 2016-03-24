@@ -1,0 +1,50 @@
+---
+notes: |
+    Grid system is powered by [Gridle](http://gridle.org/documentation/1.3.3)
+
+    Grid is configured in `_grid-settings.scss` partial
+
+    Container element is `.l-grid`
+
+    Format for grid units is: `.l-grid__unit-{?breakpoint}-{span}`
+
+    Order of grid classes should be: {default} | {sm} {md} {lg}
+
+---
+
+<div class="l-grid">
+
+    <div class="l-grid__unit-12" id="header">
+    	I'm the header, 12 columns width
+    </div>
+
+    <div class="l-grid__unit-3">
+      Spans 3
+    </div>
+
+    <div class="l-grid__unit-9">
+      Spans 9
+    </div>
+
+</div>
+
+
+<div class="l-grid">
+
+    <div class="l-grid__unit-12" id="header">
+    	I'm the header, 12 columns width
+    </div>
+
+    <div class="l-grid__unit-sm-4 l-grid__unit-md-6">
+      Cell
+    </div>
+
+    <div class="l-grid__unit-sm-4 l-grid__unit-md-3">
+      Cell
+    </div>
+
+    <div class="l-grid__unit-sm-4 l-grid__unit-md-3">
+      Cell
+    </div>
+
+</div>

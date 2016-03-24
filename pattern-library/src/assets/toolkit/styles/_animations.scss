@@ -1,0 +1,21 @@
+/**
+ * Animations.
+ * -----------
+ * Key frames first then any declarative classes
+ * Convention: .animate-{{animation-name}}
+ */
+
+@keyframes fade-in {
+ 0% {
+   opacity: 0;
+ }
+
+ 100% {
+   opacity: 1;
+ }
+}
+
+
+.animate-fade-in {
+    animation: fade-in 1s linear;
+}

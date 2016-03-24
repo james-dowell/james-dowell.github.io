@@ -1,0 +1,113 @@
+/**
+ * Utilities ( aka. Helpers)
+ * ---------
+ * All class names prefixed with u- to denote their function
+ * Should generally only have 1 declaration per media query per selector
+ *
+ * !important is allowed here as these classes take absolute priority
+ *
+ * Inspiration: http://getbootstrap.com/css/#helper-classes
+ */
+
+
+
+/**
+ * JS Only:
+ * Only display element when modernizer recognises javascript is enabled
+ */
+
+.u-js-only {
+    display: none;
+
+    .js & {
+        display: inherit;
+    }
+}
+
+
+/*
+  * Hide visually and from screen readers:
+  * http://juicystudio.com/article/screen-readers-display-none.php
+  */
+
+.u-hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/** Media query specific **/
+
+.u-hidden-sm {
+    display: none;
+
+    @include respond-min($bp-medium) {
+        display: block;
+    }
+
+}
+
+.u-hidden-md {
+    display: none;
+
+    @include respond-min($bp-large) {
+        display: block;
+    }
+}
+
+.u-hidden-lg {
+    display: none;
+
+    @include respond-min($bp-x-large) {
+        display: block;
+    }
+}
+
+
+
+/*
+  * Visible
+  * Media query specific element visibility
+  */
+
+.u-visible-sm {
+
+    @include respond-min($bp-medium) {
+        display: none !important;
+    }
+
+}
+
+.u-visible-md {
+    display: none;
+    
+    @include respond-min($bp-medium) {
+        display: block;
+    }
+}
+
+.u-visible-lg {
+    display: none;
+
+    @include respond-min($bp-large) {
+        display: block;
+    }
+}
+
+
+
+
+/**
+  * Float Left
+  */
+
+ .u-pull-left {
+     float: left !important;
+ }
+
+ /**
+  * Float right
+  */
+
+ .u-pull-right {
+     float: right !important;
+ }

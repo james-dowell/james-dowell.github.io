@@ -1,0 +1,24 @@
+/**
+ * Site Navigation
+ * -----
+ * Styling for the major site navigation item
+ *
+ */
+
+.nav-site {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-site__toggle {
+    @include font-size(24px);
+    border: 1px solid #eee;
+    background: #fff;
+    color: $base-font-color;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: em(30px);
+    height: em(30px);
+    width: em(30px);
+}

@@ -1,0 +1,28 @@
+.masthead {
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: $base-line-height;
+
+    .icon {
+        stroke-width: 8px;
+        stroke: $c-turq;
+        height: rem(66px);
+        width: 90%;
+    }
+}
+
+.masthead__logo {
+    margin: 0 auto;
+    margin-bottom: $base-line-height;
+}
+
+.masthead__name {
+    font-family: $ff-serif;
+
+    small {
+        font-family: $ff-sans;
+        display: block;
+        line-height: 1.2;
+        color: darken($c-light-grey, 10);
+    }
+}

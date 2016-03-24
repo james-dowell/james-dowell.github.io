@@ -1,0 +1,112 @@
+/**
+ * Typography
+ *
+ * $fs- : font-size
+ * $ff- : font-family
+ */
+
+ @font-face {
+     font-family: Avenir;
+     src: url('../fonts/AvenirNext-Regular.ttf');
+ }
+
+ @font-face {
+     font-family: Avenir;
+     src: url('../fonts/AvenirNext-Medium.ttf');
+     font-weight: 600;
+ }
+
+ @font-face {
+     font-family: Avenir;
+     src: url('../fonts/AvenirNext-Italic.ttf');
+     font-style: italic;
+ }
+
+ @font-face {
+     font-family: Avenir;
+     src: url('../fonts/AvenirNext-MediumItalic.ttf');
+     font-style: italic;
+     font-weight: 600;
+ }
+
+ @font-face {
+     font-family: ChaparralPro;
+     src: url('../fonts/ChaparralPro-Regular.otf');
+ }
+
+ @font-face {
+     font-family: ChaparralPro;
+     src: url('../fonts/ChaparralPro-Bold.otf');
+     font-weight: 700;
+ }
+
+ @font-face {
+     font-family: ChaparralPro;
+     src: url('../fonts/ChaparralPro-Italic.otf');
+     font-style: italic;
+ }
+
+ @font-face {
+     font-family: ChaparralPro;
+     src: url('../fonts/ChaparralPro-LightIt.otf');
+     font-style: italic;
+     font-weight: 400;
+ }
+
+// An attempt at a modular scale need to improve this
+// http://www.modularscale.com/
+//
+$modular-scale: 1;
+
+$fs-1 : ($base-font-size * ($modular-scale * 1.75));
+
+$fs-2 : ($base-font-size * ($modular-scale * 1.5));
+
+$fs-3 : ($base-font-size * ($modular-scale * 1.25));
+
+$fs-4 : ($base-font-size * ($modular-scale * 1));
+
+
+$ff-sans : Avenir;
+
+$ff-serif : ChaparralPro, times new roman;
+
+html {
+    font-family: $ff-sans;
+    font-size: em($base-font-size);
+    line-height: $base-line-height / $base-font-size;
+
+    @include respond-min($bp-medium) {
+        font-size: em(18px);
+        line-height: $base-line-height / 18px;
+    }
+}
+
+h1,
+.h1 {
+    // font-size: $fs-1;
+    @include font-size($fs-1, em($fs-1));
+    font-family: $ff-serif;
+    font-weight: normal;
+}
+
+h2,
+.h2 {
+    font-size: $fs-2;
+    font-family: $ff-serif;
+    font-weight: normal;
+}
+
+h3,
+.h3 {
+    font-size: $fs-3;
+    font-family: $ff-serif;
+    font-weight: normal;
+}
+
+h4,
+.h4 {
+    font-size: $fs-4;
+    font-family: $ff-serif;
+    font-weight: normal;
+}

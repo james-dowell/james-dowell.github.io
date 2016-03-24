@@ -1,0 +1,6 @@
+colors:
+  primary:
+    Dark: "#383838"
+    Light: "#FFFFFF"
+  secondary:
+    Turquoise: "#0CDED0"

@@ -1,0 +1,33 @@
+$gridle-class-prefix : "l";
+
+$gridle-container-name-pattern : ('grid');
+
+$gridle-grid-name-pattern: ('grid__unit','%-','%state','%-','%count');
+
+// Import gridle :
+@import 'gridle/gridle';
+
+// setup the grid (required) :
+@include gridle_setup((
+	context : 12,
+	gutter-width : 20px,
+	debug : true
+));
+
+// register states :
+@include gridle_register_state(xs, (
+    max-width : $bp-small
+));
+
+// register states :
+@include gridle_register_state(sm, (
+    min-width : $bp-small
+));
+
+@include gridle_register_state(md , (
+    min-width : $bp-medium
+));
+
+@include gridle_register_state(lg, (
+    min-width : $bp-large
+));

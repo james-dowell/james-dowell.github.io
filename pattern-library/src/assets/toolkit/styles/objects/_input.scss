@@ -1,0 +1,34 @@
+/**
+ * Input
+ * Basic styling for input elements
+ */
+
+$input-padding: quarter($base-spacing-unit);
+$input-border: 1px solid #ccc;
+
+.input-label {
+    padding-right: .5em;
+}
+
+.input-label--block {
+    display: block;
+    margin-bottom: .5em;
+    padding-right: 0;
+}
+
+.input-text {
+    @include font-size($base-font-size, 0);
+
+    border: $input-border;
+    padding: $input-padding;
+    padding: rem($input-padding);
+}
+
+
+.input-textarea {
+    @include font-size($base-font-size);
+
+    border: $input-border;
+    padding: $input-padding;
+    padding: rem($input-padding);
+}

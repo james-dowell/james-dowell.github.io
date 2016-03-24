@@ -1,0 +1,36 @@
+/**
+ * PROJECT NAME
+ *
+ * Import all the things.
+ *
+ * Follow the ITCss Principle, wide reaching selectors at the top
+ * specific selectors lower.
+ */
+
+@import 'functions';
+
+@import 'normalize';
+
+@import 'vars';
+
+@import 'mixins';
+
+@import 'animations';
+
+@import 'base';
+
+@import 'icons';
+
+@import 'typography';
+
+@import 'objects';
+
+@import 'components';
+
+@import 'views';
+
+@import 'utilities';
+
+// ------
+
+@import 'scratch';

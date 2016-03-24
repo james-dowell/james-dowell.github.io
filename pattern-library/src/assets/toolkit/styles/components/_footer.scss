@@ -1,0 +1,20 @@
+.footer {
+    text-align: center;
+    padding: 1em 0;
+
+    .icon-logo {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.footer__name {
+    @include font-size(16px, 1.5);
+    font-style: italic;
+}
+
+.footer__copyright {
+    @include font-size(12px, 1.5);
+    font-style: italic;
+    color: $c-light-grey;
+}

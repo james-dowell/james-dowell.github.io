@@ -1,0 +1,22 @@
+// Import grid settings :
+@import 'grid/grid-settings';
+
+
+
+
+// Generate classes :
+@include gridle_generate_classes();
+
+[class^="l-grid__unit"] {
+    @include gridle_state( xs ) {
+        width:100%;
+    }
+}
+
+
+// Just for the styleguide
+
+.f-container [class^='l-grid__unit'] {
+    background: #eee;
+    border: 1px solid #ccc;
+}

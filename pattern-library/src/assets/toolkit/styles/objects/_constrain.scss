@@ -1,0 +1,19 @@
+/**
+ * Constrain
+ * -----
+ * Center and restrict width of element
+ */
+
+.constrain {
+  max-width: $base-max-width;
+  margin: 0 auto;
+}
+
+.constrain--padded {
+    padding: 0 1em;
+}
+
+
+.constrain--relative {
+  position: relative;
+}

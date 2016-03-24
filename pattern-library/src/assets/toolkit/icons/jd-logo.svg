@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait" transform="translate(-380.000000, -1402.000000)" stroke="#C8C8C8">
+            <g id="Group-2" transform="translate(333.000000, 1402.000000)">
+                <g id="Group" transform="translate(45.000000, 0.000000)">
+                    <path d="M5.07284927,2.08510638 L11.4194264,2.08510638 C11.6930654,2.08510638 11.9148936,2.30653512 11.9148936,2.58099408 L11.9148936,11.4190059 C11.9148936,11.6928771 11.6934649,11.9148936 11.4190059,11.9148936 L2.58099408,11.9148936 C2.30712287,11.9148936 2.08510638,11.6934649 2.08510638,11.4190059 L2.08510638,5.10435203" id="Rectangle-11" stroke-linejoin="bevel" transform="translate(7.000000, 7.000000) rotate(-45.000000) translate(-7.000000, -7.000000) "></path>
+                    <path d="M7,13.2688588 L7,0.636363636" id="Path-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

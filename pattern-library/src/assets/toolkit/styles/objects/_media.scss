@@ -1,0 +1,35 @@
+/**
+ * Media Object
+ * -----
+ * Aligns an image next to a block of text
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+
+.media {
+    @include cf();
+    display: block;
+}
+
+.media__img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.media__body {
+    display: block;
+    overflow: hidden;
+
+    &,
+    .media__body > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Modifiers */
+
+.media--reverse {
+    .media__img {
+        float: right;
+        margin: 0 0 0 10px;
+    }
+}

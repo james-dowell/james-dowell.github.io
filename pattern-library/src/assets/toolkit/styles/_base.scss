@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Base
+   Wide reaching selectors and base styling
+   ========================================================================== */
+
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+// https://github.com/inuitcss/base.page/blob/master/_base.page.scss
+html {
+    box-sizing: border-box;
+    background-color: $base-background-color;
+    color: $base-font-color;
+    overflow-y: scroll;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+     -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/**
+ * https://github.com/inuitcss/base.images/blob/master/_base.images.scss
+ *
+ * 1. Offset `alt` text from surrounding copy.
+ * 2. Fluid images for responsive purposes.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+    font-style: italic; /* [1] */
+    max-width: 100%; /* [2] */
+    vertical-align: middle; /* [3] */
+}
+
+
+
+/**
+ * Links
+ */
+
+a {
+    color: $base-link-color;
+}
+
+/**
+ * Default base margins
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+    margin-bottom: $base-spacing-unit;
+    margin-bottom: rem($base-spacing-unit);
+    margin-top: 0;
+}
