@@ -92,21 +92,21 @@ h1,
 
 h2,
 .h2 {
-    font-size: $fs-2;
+    @include font-size($fs-2, em($fs-2));
     font-family: $ff-serif;
     font-weight: normal;
 }
 
 h3,
 .h3 {
-    font-size: $fs-3;
+    @include font-size($fs-3, em($fs-3));
     font-family: $ff-serif;
     font-weight: normal;
 }
 
 h4,
 .h4 {
-    font-size: $fs-4;
+    @include font-size($fs-4, em($fs-4));
     font-family: $ff-serif;
     font-weight: normal;
 }
