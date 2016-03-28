@@ -53,6 +53,7 @@ a {
     color: $base-link-color;
     text-decoration: none;
     position: relative;
+    white-space: nowrap;
 
     &:after {
         content: '';

@@ -1,4 +1,5 @@
 .timestamp {
     @include font-size(12px, 1.1);
+    display: block;
     color: $c-medium-grey;
 }
