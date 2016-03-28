@@ -1,0 +1,10 @@
+.link {
+    margin-bottom: halve($base-spacing-unit);
+    display: inline-block;
+    line-height: 1.2em;
+
+    .icon {
+        vertical-align: middle;
+        height: rem(6px);
+    }
+}

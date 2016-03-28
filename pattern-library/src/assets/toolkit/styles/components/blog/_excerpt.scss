@@ -5,8 +5,22 @@
         margin: 0;
     }
 
+    a {
+        color: $base-font-color;
+    }
+
 }
 
-.excerpt__header {
+.excerpt__header,
+.excerpt__img {
     margin-bottom: $base-spacing-unit;
+}
+
+.excerpt__img {
+
+    img {
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
 }

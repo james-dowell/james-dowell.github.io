@@ -1,19 +1,31 @@
 <article class="excerpt">
 
-    <header class="excerpt__header">
-        <h2 class="h2">Adventures in AngularJS with React</h2>
-        <div class="timestamp">04 / 12 / 2016</div>
-    </header>
+    <div class="constrain constrain--padded">
+
+        {{#if image }}
+
+        <div class="excerpt__img">
+            <img src="{{ baseUrl }}/assets/toolkit/images/{{image}}">
+        </div>
+
+        {{/if}}
+
+        <header class="excerpt__header">
+            <h2 class="h2"><a href="post.html">Adventures in AngularJS with React</a></h2>
+            <div class="timestamp">04 / 12 / 2016</div>
+        </header>
 
 
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Aliquam egestas tristique tellus id ornare.
-        Donec vestibulum nisl eu mauris molestie,
-        nec efficitur ex vehicula. Etiam suscipit massa libero,
-        nec placerat odio luctus id. Duis egestas sem dui, at
-        hendrerit urna dignissim ut. Quisque consequat vel
-        purus quis interdum. Sed gravida maximus neque.
-    </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aliquam egestas tristique tellus id ornare.
+            Donec vestibulum nisl eu mauris molestie,
+            nec efficitur ex vehicula. Etiam suscipit massa libero,
+            nec placerat odio luctus id. Duis egestas sem dui, at
+            hendrerit urna dignissim ut. Quisque consequat vel
+            purus quis interdum. Sed gravida maximus neque.
+        </p>
+
+    </div>
 
 </article>

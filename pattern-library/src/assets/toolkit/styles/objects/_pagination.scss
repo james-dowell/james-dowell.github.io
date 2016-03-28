@@ -1,0 +1,21 @@
+.pagination {
+    margin-bottom: $base-spacing-unit;
+    @include cf();
+
+    li {
+        width: 50%;
+        float: right;
+        text-align: right;
+
+        &:first-child {
+            float: left;
+            text-align: left;
+        }
+    }
+}
+
+.pagination__link {
+    font-weight: 700;
+    font-style: italic;
+    color: $base-font-color;
+}

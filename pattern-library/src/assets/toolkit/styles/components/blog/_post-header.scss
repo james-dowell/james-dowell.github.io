@@ -1,0 +1,18 @@
+.post-header {
+    margin-bottom: $base-spacing-unit;
+    text-align: center;
+
+    .h1 {
+        margin: 0;
+    }
+
+    .timestamp {
+        margin-bottom: halve($base-spacing-unit);
+    }
+
+}
+
+.post-header__icon {
+    width: 14px;
+    height: 14px;
+}

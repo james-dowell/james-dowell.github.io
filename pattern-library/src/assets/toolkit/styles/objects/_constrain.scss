@@ -5,8 +5,12 @@
  */
 
 .constrain {
-  max-width: $base-max-width;
-  margin: 0 auto;
+    margin: 0 auto;
+    max-width: $base-max-width;
+
+    @include respond-min($bp-large) {
+        max-width: $desktop-max-width;
+    }
 }
 
 .constrain--padded {

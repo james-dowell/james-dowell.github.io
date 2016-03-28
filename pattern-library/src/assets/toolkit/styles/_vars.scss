@@ -14,17 +14,21 @@ $c-medium-grey: #6A6A6A;
 
 $c-turq: #0CDED0;
 
+$c-language-js: #F8DC3D;
+
  /* Base units */
 
 $base-font-color: #333;
 
-$base-link-color: #333;
+$base-link-color: $c-turq;
 
 $base-font-size: 16px;
 
 $base-line-height:  30px;
 
-$base-max-width : 65em;
+$base-max-width : rem(500px);
+
+$desktop-max-width : rem(600px);
 
 $base-spacing-unit: $base-line-height;
 

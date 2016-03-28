@@ -1,0 +1,21 @@
+.blog-masthead {
+    margin-bottom: $base-spacing-unit;
+}
+
+.blog-masthead__img {
+    max-width: rem(900px);
+    margin: 0 auto;
+    position: relative;
+    height: rem(300px);
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+
+.blog-masthead--js {
+    background-color: $c-language-js;
+}

@@ -152,7 +152,12 @@ gulp.task('favicon', function () {
 // assemble
 gulp.task('assemble', function (done) {
 	assemble({
-		logErrors: config.dev
+		logErrors: config.dev,
+		helpers: {
+			default: function (value, defaultValue) {
+				return value != null ? value : defaultValue;
+			}
+		}
 	});
 	done();
 });

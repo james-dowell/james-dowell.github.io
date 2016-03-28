@@ -1,0 +1,18 @@
+.prose {
+
+    blockquote {
+        @include font-size(20px);
+        font-family: $ff-serif;
+        font-weight: lighter;
+        font-style: italic;
+
+        &:before {
+            content: '“';
+        }
+
+        &:after {
+            content: '”';
+        }
+    }
+
+}

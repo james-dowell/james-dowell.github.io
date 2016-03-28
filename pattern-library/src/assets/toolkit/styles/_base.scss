@@ -45,13 +45,30 @@ img {
 }
 
 
-
 /**
  * Links
  */
 
 a {
     color: $base-link-color;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        top: 105%;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        background-color: $base-link-color;
+        transition: opacity .3s;
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
 }
 
 /**
