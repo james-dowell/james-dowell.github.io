@@ -79,7 +79,7 @@
 
 .u-visible-md {
     display: none;
-    
+
     @include respond-min($bp-medium) {
         display: block;
     }
@@ -94,6 +94,9 @@
 }
 
 
+.u-landmark {
+    margin-bottom: $base-spacing-unit;
+}
 
 
 /**

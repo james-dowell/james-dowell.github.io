@@ -1,0 +1,28 @@
+.social-links {
+    margin-bottom: $base-spacing-unit;
+
+    .icon {
+        width: rem(32px);
+        height: rem(30px);
+    }
+
+    a {
+        display: flex;
+        margin: 0 rem(5px);
+        opacity: .5;
+        transition: opacity .3s;
+
+        &:after {
+            display: none;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.social-links__list {
+    display: inline-block;
+    display: inline-flex;
+}
