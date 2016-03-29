@@ -3,8 +3,13 @@
     display: inline-block;
     line-height: 1.2em;
 
+
     .icon {
         vertical-align: middle;
         height: rem(8px);
     }
+}
+
+.link--back {
+    font-family: $ff-serif;
 }
