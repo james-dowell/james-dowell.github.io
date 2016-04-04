@@ -2,20 +2,37 @@
     margin-bottom: $base-spacing-unit;
 }
 
-.blog-masthead__img {
+.blog-masthead__lang {
     max-width: rem(900px);
     margin: 0 auto;
     position: relative;
     height: rem(300px);
 
-    img {
+    span {
         position: absolute;
         bottom: 0;
         right: 0;
         z-index: 1;
+        font-family: Brandon Grotesque;
+        @include font-size(175px, 1);
     }
 }
 
 .blog-masthead--js {
     background-color: $c-language-js;
+}
+
+.blog-masthead--ts {
+    background-color: $c-language-ts;
+    color: white;
+}
+
+.blog-masthead--svg {
+    background-color: $c-language-svg;
+    color: white;
+}
+
+.blog-masthead--general {
+    background-color: $c-language-svg;
+    color: white;
 }

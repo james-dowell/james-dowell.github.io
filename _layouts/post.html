@@ -6,9 +6,17 @@ layout: default
 
     <div class="blog-masthead blog-masthead--{{ page.language }}">
 
-        <div class="blog-masthead__img">
+        <div class="blog-masthead__lang">
 
-            <img src="/images/headers/{{ page.language }}-header.png">
+            {% if page.language == "general" %}
+
+            <span>&amp;</span>
+
+            {% else %}
+
+            <span>{{ page.language  | upcase }}</span>
+
+            {% endif %}
 
         </div>
 
