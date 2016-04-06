@@ -53,6 +53,11 @@
      font-weight: 400;
  }
 
+ @font-face {
+     font-family: Brandon;
+     src: url('../fonts/Brandon_med.otf');
+ }
+
 // An attempt at a modular scale need to improve this
 // http://www.modularscale.com/
 //
@@ -70,6 +75,8 @@ $fs-4 : ($base-font-size * ($modular-scale * 1));
 $ff-sans : Avenir, Helvetica, Arial;
 
 $ff-serif : ChaparralPro, times new roman;
+
+$ff-brandon : Brandon, Helvetica, Arial;
 
 html {
     font-family: $ff-sans;
