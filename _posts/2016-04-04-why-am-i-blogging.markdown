@@ -20,9 +20,10 @@ Months went by and the desire to form new and interesting blog posts never mater
 
 ### Enter Jekyll
 
-I'd heard a lot about Jekyll from colleagues at work, from the [ShopTalk Show][shop-talk] podcast and from reading other blogs. Jekyll, the static site generator built in Ruby, has proved to be a simple but powerful platform that allows you to build a static site with free hosting on Github pages. You can actually [visit the repo for this site][blog-repo] on my Github account.
+I'd heard a lot about Jekyll from colleagues at work, the [ShopTalk Show][shop-talk] podcast and from reading other blogs. [Jekyll][jeykll], the static site generator built in Ruby, has proved to be a simple but powerful platform that allows you to build a static site with free hosting on Github pages. You can actually [visit the repo for this site][blog-repo] on my Github account.
 
 [uvd-site]: http://uvd.co.uk
 [wordpress]: https://en-gb.wordpress.org/
 [shop-talk]: http://shoptalkshow.com/
 [blog-repo]: https://github.com/james-dowell/james-dowell.github.io
+[jeykll]: https://jekyllrb.com/

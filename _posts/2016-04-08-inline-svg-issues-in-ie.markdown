@@ -6,7 +6,7 @@ categories: svg
 language: svg
 ---
 
-Inline SVG's are a popular technique introducing icon systems for your site. Having used them a number of times now I thought I might share why there a great option and also discuss some of the gotchas you might get while using them.
+Inline SVG's are a popular technique for introducing icon systems for your site. Having used them a number of times now I thought I might share why there a great option and also discuss some of the gotchas you might get while using them.
 
 ### What are inline SVG's?
 
