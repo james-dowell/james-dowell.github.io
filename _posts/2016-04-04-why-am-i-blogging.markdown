@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Whats this all about?"
+description: "Why I have started to write a blog and how I went about building it with Jekyll"
 date:   2016-04-04 16:20:00 +0000
 categories: general
 language: general
