@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Inline SVGs and their Gotchas"
-date:   2016-04-04 16:20:00 +0000
+date:   2016-04-08 16:20:00 +0000
 categories: svg
 language: svg
 ---
