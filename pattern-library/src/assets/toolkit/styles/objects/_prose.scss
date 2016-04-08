@@ -1,5 +1,17 @@
 .prose {
 
+    table {
+        width: 100%;
+        table-layout: fixed;
+        text-align: center;
+        background-color: $c-lighter-grey;
+
+        th {
+            font-weight: normal;
+            @include font-size(14px);
+        }
+    }
+
     blockquote {
         @include font-size(20px);
         font-family: $ff-serif;

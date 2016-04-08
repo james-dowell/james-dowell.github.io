@@ -6,30 +6,6 @@
  */
 
  @font-face {
-     font-family: Avenir;
-     src: url('../fonts/AvenirNext-Regular.ttf');
- }
-
- @font-face {
-     font-family: Avenir;
-     src: url('../fonts/AvenirNext-Medium.ttf');
-     font-weight: 600;
- }
-
- @font-face {
-     font-family: Avenir;
-     src: url('../fonts/AvenirNext-Italic.ttf');
-     font-style: italic;
- }
-
- @font-face {
-     font-family: Avenir;
-     src: url('../fonts/AvenirNext-MediumItalic.ttf');
-     font-style: italic;
-     font-weight: 600;
- }
-
- @font-face {
      font-family: ChaparralPro;
      src: url('../fonts/ChaparralPro-Regular.otf');
  }
@@ -72,7 +48,7 @@ $fs-3 : ($base-font-size * ($modular-scale * 1.25));
 $fs-4 : ($base-font-size * ($modular-scale * 1));
 
 
-$ff-sans : Avenir, Helvetica, Arial;
+$ff-sans : Lato, Helvetica, Arial;
 
 $ff-serif : ChaparralPro, times new roman;
 
@@ -82,10 +58,19 @@ html {
     font-family: $ff-sans;
     font-size: em($base-font-size);
     line-height: $base-line-height / $base-font-size;
+    font-weight: 300;
 
     @include respond-min($bp-medium) {
         font-size: em(18px);
         line-height: $base-line-height / 18px;
+    }
+
+    //Experiment
+    opacity: 0;
+    transition: opacity .3s;
+
+    &.wf-active {
+        opacity: 1;
     }
 }
 
@@ -115,5 +100,9 @@ h4,
 .h4 {
     @include font-size($fs-4, em($fs-4));
     font-family: $ff-serif;
+    font-weight: normal;
+}
+
+strong {
     font-weight: normal;
 }
