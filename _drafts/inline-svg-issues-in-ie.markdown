@@ -9,15 +9,29 @@ Inline SVG's are a popular technique for introducing icon systems for your site.
 
 ### What are inline SVG's?
 
-There's a great [CSS Tricks article][css-tricks-article-on-svg] on what are inline SVG's so I won't go into too much detail, but essentially they allow to include
+There's a great [CSS Tricks article][css-tricks-article-on-svg] on what are inline SVG's so I won't go into too much detail, but essentially they allow you to include an SVG icon using the `<use>`. A code example of use is shown below:
+
+{% highlight html %}
+<svg viewBox="0 0 100 100" class="icon icon-menu">
+  <use xlink:href="#menu"></use>
+</svg>
+{% endhighlight %}
+
 
 ### Inline SVG browser support
 
+| IE | Edge | Firefox | Chrome | Safari |
+|----|------|---------|--------|--------|
+| 9+ | 11+  | 1.5     | 1.0    | 3.0.4  |
 
+Browser support taken from [MDN][mdn-svg-support]
 
 ## Benefits of inline SVG
 
- - **You can style them in CSS** - dddsadasdsdasdas
+ - **You can style them in CSS** - You use CSS to style inline SVG icon which makes them a really powerful icon solution. A great example is creating an inline SVG icon and changing the fill colour with CSS. This way your not duplicating and loading in a copy of the same icon in a different colour.
+
+ - **They compress well** - Minified/Optimised SVG's can get pretty small, so thats a plus.
+ - **They scale well and look fantastic on Retina displays** - One of the main annoyances of using png's for your icon sets is you tend to have so supply a normal size and a double size for Retina screens.
 
 ## Inline SVG gotchas
 
@@ -99,3 +113,4 @@ This can be further optimised by something like [gulp-svgmin][gulp-svgmin] or [g
 [sketch-app]: [https://www.sketchapp.com/]
 [gulp-svgmin]: [https://www.npmjs.com/package/gulp-svgmin]
 [grunt-svgmin]: [https://github.com/sindresorhus/grunt-svgmin]
+[mdn-svg-support]: [https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg]
