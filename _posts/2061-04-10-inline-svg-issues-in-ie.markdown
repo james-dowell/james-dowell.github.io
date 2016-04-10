@@ -2,7 +2,7 @@
 layout: post
 title:  "Inline SVGs and their Gotcha's"
 description: "Using inline SVG's as an icon set is a great solution for a site, but they do come with nuance's like not displaying correctly in IE, here's some solutions"
-date:   2016-04-10 10:30:00 +0000
+date:   2016-04-10 10:30:00 +0100
 categories: svg
 language: svg
 ---
