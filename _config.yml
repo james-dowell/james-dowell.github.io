@@ -11,7 +11,7 @@ email: jamesdowell1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   I have decided to start blog about front-end tech and what I have learned in my career so far. All in the faint hope it might be useful to someone else.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jamesodwell.me" # the base hostname & protocol for your site
+url: "http://jamesdowell.me" # the base hostname & protocol for your site
 twitter_username: jmwdowell
 github_username:  james-dowell
 permalink: /:categories/:title
