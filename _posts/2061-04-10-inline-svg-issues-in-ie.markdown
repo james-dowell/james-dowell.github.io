@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "Inline SVGs and their Gotchas"
+title:  "Inline SVGs and their Gotcha's"
+description: "Using inline SVG's as an icon set is a great solution for a site, but they do come with nuance's like not displaying correctly in IE, here's some solutions"
+date:   2016-04-10 10:30:00 +0000
 categories: svg
 language: svg
 ---
 
-Inline SVG's are a popular technique for introducing icon systems for your site. Having used them a number of times now I thought I might share why there a great option and also discuss some of the gotchas you might get while using them.
+Inline SVG's are a popular technique for introducing icon systems for your site. Having used them a number of times now I thought I might share why they're a great option and also discuss some of the gotchas you might get while using them.
 
 ### What are inline SVG's?
 
-There's a great [CSS Tricks article][css-tricks-article-on-svg] on what are inline SVG's so I won't go into too much detail, but essentially they allow you to include an SVG icon using the `<use>`. A code example of use is shown below:
+If you're wondering what inline SVG's are, there's a great [CSS Tricks article][css-tricks-article-on-svg] which describes them, and how to use them, in detail. Essentially they allow you to include an SVG icon using the `<use>` tag. Here's an example:
 
 {% highlight html %}
 <svg viewBox="0 0 100 100" class="icon icon-menu">
@@ -26,20 +28,27 @@ There's a great [CSS Tricks article][css-tricks-article-on-svg] on what are inli
 
 Browser support taken from [MDN][mdn-svg-support]
 
-## Benefits of inline SVG
+## Benefit's of inline SVG
 
- - **You can style them in CSS** - You use CSS to style inline SVG icon which makes them a really powerful icon solution. A great example is creating an inline SVG icon and changing the fill colour with CSS. This way your not duplicating and loading in a copy of the same icon in a different colour.
+ - **You can style them in CSS** - You use CSS to style inline SVG icons which makes them a really powerful icon solution. A great example is creating an icon and changing the fill colour with CSS. This way your not duplicating and loading in a copy of the same icon in a different colour.
 
- - **They compress well** - Minified/Optimised SVG's can get pretty small, so thats a plus.
- - **They scale well and look fantastic on Retina displays** - One of the main annoyances of using png's for your icon sets is you tend to have so supply a normal size and a double size for Retina screens.
+ - **They compress well** - Minified/Optimised SVG's can get pretty small, so that's a plus.
+
+ - **They scale well and look fantastic on Retina displays** - One of the main annoyances of using png's for your icon sets is you tend to have to supply both a normal and double size for Retina screens. SVG's or (Scalable Vector Graphics) scale as much as you want and they stay crisp, (so no pixelation).
 
 ## Inline SVG gotchas
 
-### SVG Icon not showing in IE correctly
+### CSS fill not working on inline SVG
+
+When using CSS to style an SVG, one of the main reasons to use inline SVG's for your icons, you might find that some of the styles you attempt to apply might not be working. On a number of occasions I've tried to add a fill or stroke colour with CSS and have seen no effect.
+
+If the fill or stroke is not changing colour when you define it in the CSS, it's likely that it's defined as an inline style on the SVG it'self. Be sure to remove any `fill` or `stroke` attributes when you add a new icon to your set.
+
+### SVG Icon not showing correctly in IE
 
 You might find that in any version of IE (including Internet Explorer 11) that your inline SVG icons are malformed or simply don't show at all, yet they look fine in Chrome/Firefox/Safari. This has caught me out a few times and has usually happened when creating/saving SVG's from [Sketch 3][sketch-app] (Bohemian Coding).
 
-Sketch 3 is great design tool for Mac OSX, its simple yet powerful. However, when exporting SVG's it has a tendency to include plenty of unnecessary elements in its SVG files. Shown below is an icon that I had trouble with in IE:
+Sketch 3 is great design tool for Mac OSX, it's simple yet powerful. However, when exporting SVG's it has a tendency to include plenty of unnecessary elements in it's SVG files. Shown below is an icon that I had trouble with in IE:
 
 <div class="u-landmark">
 
@@ -88,9 +97,9 @@ I have truncated it slightly but here's the SVG code that was produced by Sketch
 
 ### Solution
 
-If you look through the SVG code you can see that there are a number of `<g>` tags, but that isn't affecting the icon in IE. I found that by removing the `<defs>` and `<mask>` tag, the icon showed correctly. It appears that IE doesn't like the `<mask>` tag being used on inline SVG's. For one reason or another, Sketch added these in masks for no reason and removing them had no effect on how the SVG displays.
+If you look through the SVG code you can see that there are a number of `<g>` tags, but that isn't affecting the icon in IE. I found that by removing the `<defs>` and `<mask>` tag, the icon showed correctly. It appears that IE doesn't like the `<mask>` tag being used on inline SVG's. It looks like, for one reason or another, Sketch added these in masks and removing them had no effect on how the SVG displays.
 
-Simply removing these causes the SVG to work correctly in all versions of IE and Edge. The slimmed down SVG would look something like this:
+By removing these tags the SVG icon now displays correctly in all versions of IE and Edge. The slimmed down SVG would look something like this:
 
 {% highlight html %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="29px" height="28px" viewBox="0 0 29 28" version="1.1">
@@ -107,7 +116,7 @@ Simply removing these causes the SVG to work correctly in all versions of IE and
 </svg>
 {% endhighlight %}
 
-This can be further optimised by something like [gulp-svgmin][gulp-svgmin] or [grunt-svgmin][grunt-svgmin].
+This can be further optimised by using build tools such as [gulp-svgmin][gulp-svgmin] or [grunt-svgmin][grunt-svgmin].
 
 [css-tricks-article-on-svg]: [https://css-tricks.com/svg-sprites-use-better-icon-fonts/]
 [sketch-app]: [https://www.sketchapp.com/]
