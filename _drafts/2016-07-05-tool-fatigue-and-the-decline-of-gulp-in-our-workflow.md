@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Easing tool fatigue in our front-end workflow"
-description: ""
-date:   2016-07-05 16:20:00 +0000
+title:  "Easing tool fatigue in your front-end workflow"
+description: "Using npm to manage project build tasks is the future of front-end development"
+date:   2016-09-09 16:20:00 +0000
 categories: js
 language: js
 ---
@@ -86,4 +86,33 @@ One major benefit to introducing JSPM into the mix was browser transpilation. Ra
 This removed a large chunk of gulp tasks and freeing machine resources, ultimately making it quicker to develop and a faster feedback loop
 
 
-What we do now (with a karma & typescript example)
+### Live example
+
+To show what you're npm scripts might look like when you've made it your predominant build tool, here's a snippet from a project I have worked on recently:
+
+{% highlight json %}
+{
+    ...
+    "scripts": {
+      "serve": "gulp constants && gulp inject:icons && browser-sync start --config bs-config.js",
+      "serve:dist": "npm run build && browser-sync start --config bs-config.dist.js",
+      "test": "npm run templateCache && karma start karma.conf.js --single-run",
+      "test:coverage:remap": "remap-istanbul --input ./.tmp/coverage-reports/coverage-final.json --output coverage --type html",
+      "test:coverage": "rm -rf .tmp/coverage && tsc && npm run templateCache && karma start karma.coverage.conf.js --single-run && npm run test:coverage:remap",
+      "test:watch": "npm run templateCache:watch | karma start karma.conf.js --no-single-run --auto-watch",
+      "templateCache": "gulp buildTemplateCache:unit",
+      "templateCache:watch": "gulp buildTemplateCache:unit:watch",
+      "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+      "gulp": "gulp",
+      "jspm": "jspm",
+      "pattern-library": "(cd pattern-library; npm run build)",
+      "build": "npm run pattern-library && gulp build",
+      "mock-api": "npm run mock-api:factories && robohydra -p 3000 limpid-api.conf",
+      "mock-api:factories": "tsc --outDir ./.tmp/factories/ --module commonjs ./src/fixtures/factories/*",
+      "build-dependency-bundle": "jspm bundle 'src/app/**/* - [src/**/*]' .tmp/dependancies.js",
+      "postinstall": "jspm install && typings install"
+    }
+}
+{% endhighlight %}
+
+Is this you're preferered method of controlling your front-end tools? Or do you have an argument for gulp/grunt over this approach? Let me know below!
