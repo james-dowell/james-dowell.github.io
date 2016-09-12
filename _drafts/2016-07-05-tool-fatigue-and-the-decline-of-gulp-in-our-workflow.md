@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Easing tool fatigue in your front-end workflow"
+title:  "Easing tool fatigue in front-end workflow"
 description: "Using npm to manage project build tasks is the future of front-end development"
 date:   2016-09-09 16:20:00 +0000
 categories: js
