@@ -8,6 +8,8 @@
 
     .timestamp {
         margin-bottom: halve($base-spacing-unit);
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
     }
 
 }

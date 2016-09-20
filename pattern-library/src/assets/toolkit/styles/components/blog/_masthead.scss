@@ -14,7 +14,11 @@
         right: 1rem;
         z-index: 1;
         font-family: $ff-brandon;
-        @include font-size(175px, 1);
+        @include font-size(125px, 1);
+
+        @include respond-min($bp-large) {
+            @include font-size(175px, 1);
+        };
     }
 }
 

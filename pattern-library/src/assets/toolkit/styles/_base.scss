@@ -53,13 +53,13 @@ a {
     color: $base-link-color;
     text-decoration: none;
     position: relative;
-    white-space: nowrap;
+    font-weight: normal;
 
     &:after {
         content: '';
         height: 1px;
         position: absolute;
-        top: 105%;
+        top: 115%;
         left: 0;
         width: 100%;
         opacity: 0;

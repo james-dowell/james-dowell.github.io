@@ -118,8 +118,8 @@ By removing these tags the SVG icon now displays correctly in all versions of IE
 
 This can be further optimised by using build tools such as [gulp-svgmin][gulp-svgmin] or [grunt-svgmin][grunt-svgmin].
 
-[css-tricks-article-on-svg]: [https://css-tricks.com/svg-sprites-use-better-icon-fonts/]
-[sketch-app]: [https://www.sketchapp.com/]
-[gulp-svgmin]: [https://www.npmjs.com/package/gulp-svgmin]
-[grunt-svgmin]: [https://github.com/sindresorhus/grunt-svgmin]
-[mdn-svg-support]: [https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg]
+[css-tricks-article-on-svg]: https://css-tricks.com/svg-sprites-use-better-icon-fonts/
+[sketch-app]: https://www.sketchapp.com/
+[gulp-svgmin]: https://www.npmjs.com/package/gulp-svgmin
+[grunt-svgmin]: https://github.com/sindresorhus/grunt-svgmin
+[mdn-svg-support]: https://developer.mozilla.org/en-US/docs/Web/SVG/Element/svg

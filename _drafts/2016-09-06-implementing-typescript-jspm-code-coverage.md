@@ -23,7 +23,13 @@ Here are some reasons:
 
 - Secondly, it helps to identify an are which might need a re-write. For example, if a new feature requires changes in an area with no tests to be altered. You might be better of re-writing that particular file/area with a TDD approach.
 
-- Finally, ... COME BACK TO ME
+- Finally, it helps to reassure both the engineers and clients that the most important conditions (function points) have been tested.
+
+Its important to remember that code coverage isn't about [reaching a quality target][Martin Fowler on test coverage] (i.e. 100% coverage). It's more about the journey to get there and finding untested code. In most cases it unrealistic to expect 100% code coverage, especially when dealing with a legacy project.
+
+### Code coverage report example
+
+Here's an example of the coverage report we're hoping to generate in this tutorial.
 
 ![Typescript code coverage html report example](/images/typescript-code-coverage-example.png)
 
@@ -52,5 +58,6 @@ You're going to have to the typescript compiler (tsc) to generate some JS files 
 Using [remap-istanbul][remap-istanbul] we can map the coverage report back to the original, pre-compiled code. This allows us to..
 
 
-[remap-istanbul]: [https://github.com/SitePen/remap-istanbul]
-[Test driven development information]:[http://agiledata.org/essays/tdd.html]
+[remap-istanbul]: https://github.com/SitePen/remap-istanbul
+[Test driven development information]: http://agiledata.org/essays/tdd.html
+[Martin Fowler on test coverage]: http://martinfowler.com/bliki/TestCoverage.html
