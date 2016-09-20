@@ -7,19 +7,19 @@ categories: js
 language: js
 ---
 
-As part of a forward thinking team at UVD, I'm no stranger to tool fatigue and the frustrations that go with it. Having 10+ (at least) gulp plugins running all manor of tasks from, SCSS compilation, template cache generation, test running and Typescript transpilation.
+As part of the forward thinking team at UVD, I’m no stranger to tool fatigue and the frustrations that go with it. Having at least 10+ gulp plugins running all manner of tasks from, SCSS compilation, TemplateCache generation, test running and TypeScript transpilation.
 
-Many of us are used to composing large Gulpfile's or Gruntfile's to perform build and development tasks as we develop complex projects, but recently I've been utilising the power of `npm` scripts to run tools straight from the command line.
+Many of us are used to composing large gulpfiles or gruntfiles to perform build and development tasks as we develop complex projects, but recently I’ve been utilising the power of `npm` scripts to run tools straight from the command line.
 
-Using `npm` scripts is nothing new, there are a [number of articles][keith-cirkel-use-npm-as-build-tool] that detail how powerful they can be, and why we should all be using them.
+Using `npm` scripts is nothing new, and there are a [number of articles][keith-cirkel-use-npm-as-build-tool] that detail how powerful they can be, and why we should all be using them.
 
 ### Gulp power!
 
-As JavaScript has matured over the last 12 months into ES2016/ES2017 and the explosion of other languages like Dart and Typescript mean that more then ever before we are transpiling code into ES5 JavaScript. I, for example, have leveraged the power of Typescript and ES6 on a number of projects, both personal and professional.
+Over the last 12 months JavaScript has matured into ES2016/ES2017, coupled with the explosion of other languages like Dart and Typescript mean that more than ever before we are transpiling code into ES5 JavaScript.
 
-My go to tool was Gulp which used to be responsible for serving assets, transpiling code, building styles and many, many other tasks. Now I'm not suggesting that Gulp is dead or that it shouldn't be used.. but it can hoover up a lot of resources while its completing tasks and watching for changes.
+Previously my go-to tool was gulp, I used this tool for serving assets, transpiling code, building styles and many, many other tasks. Now I'm not suggesting that Gulp is dead or that it shouldn't be used.. but it can hoover up a lot of resources while it's completing tasks and watching for changes.
 
-Here's an example of some of my later Gulpfile's (used with Babel as you'll notice the ES2015/ES6 syntax). Also note that I have split other tasks into separate files which are being imported in at the top of the file.
+Here's an example of some of my later Gulpfile's (used with Babel as you'll notice the ES2015/ES6 syntax). Also note that I've split other tasks into separate files, which are being imported in at the top of the file.
 
 {% highlight js %}
 import runUnitTests from './gulp/unit-tests';
@@ -79,16 +79,15 @@ These tasks could be moved to npm and might look something like the following:
 
 In this instance, we are still using gulp to build our template cache for the tests but we're using the gulp task in isolation as opposed to relying on gulp for all the things!
 
-Another example would be with the typescript transpilation. For this particular project, it was using bower for package management which I later upgraded to JSPM (JavaScript Package Manager). Introducing typescript into the project began with using gulp-typescript to transpile code to JavaScript and then used that in the browser.
+Another example would be with the TypeScript transpilation. For this particular project it was using bower for package management, which I later upgraded to JSPM (JavaScript Package Manager). Introducing typescript into the project began with using gulp-typescript to transpile code to JavaScript and then used that in the browser.
 
-One major benefit to introducing JSPM into the mix was browser transpilation. Rather than watching and transpiling code on save (which is a fairly intensive task), I could now give the browser my typescript and ask JSPM with SystemJS to transpile my code in the browser. This gives source mapping and on the fly transpilation out of the box! Magic!
+One major benefit of introducing JSPM into the mix was browser transpilation. Rather than watching and transpiling code on save (which is a fairly intensive task), I can now give the browser my typescript and ask JSPM with SystemJS to transpile my code in the browser. This provides source mapping and on the fly transpilation out of the box, magic!
 
-This removed a large chunk of gulp tasks and freeing machine resources, ultimately making it quicker to develop with a faster feedback loop
-
+This also removed a large chunk of gulp tasks and freed up machine resources, ultimately making it quicker to develop with a faster feedback loop.
 
 ### Live example
 
-To show what you're npm scripts might look like when you've made it your predominant build tool, here's a snippet from a project I have worked on recently:
+To illustrate what your `npm` scripts might look like when you've made it your predominant build tool, here's a snippet from a project I have worked on recently:
 
 {% highlight json %}
 {

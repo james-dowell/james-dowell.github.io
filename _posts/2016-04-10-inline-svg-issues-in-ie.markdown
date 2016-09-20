@@ -30,7 +30,7 @@ Browser support taken from [MDN][mdn-svg-support]
 
 ## Benefit's of inline SVG
 
- - **You can style them in CSS** - You use CSS to style inline SVG icons which makes them a really powerful icon solution. A great example is creating an icon and changing the fill colour with CSS. This way your not duplicating and loading in a copy of the same icon in a different colour.
+ - **You can style them in CSS** - You use CSS to style inline SVG icons which makes them a really powerful icon solution. A great example is creating an icon and changing the fill colour with CSS. This way you're not duplicating and loading in a copy of the same icon in a different colour.
 
  - **They compress well** - Minified/Optimised SVG's can get pretty small, so that's a plus.
 
