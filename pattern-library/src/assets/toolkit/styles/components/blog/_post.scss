@@ -1,0 +1,16 @@
+.post {
+
+    a {
+        color: $c-blue;
+        white-space: nowrap;
+
+        .icon {
+            stroke: $c-blue;
+        }
+
+        &:after {
+            background: $c-blue;
+        }
+    }
+
+}

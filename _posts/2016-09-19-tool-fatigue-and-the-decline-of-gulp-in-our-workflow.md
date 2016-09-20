@@ -116,4 +116,4 @@ To illustrate what your `npm` scripts might look like when you've made it your p
 
 Is this your preferred method of controlling your front-end tools? Or do you have an argument for gulp/grunt over this approach? Let me know below!
 
-[keith-cirkel-use-npm-as-build-tool]:[https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/]
+[keith-cirkel-use-npm-as-build-tool]:https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/
