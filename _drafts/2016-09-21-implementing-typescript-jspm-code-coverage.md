@@ -173,7 +173,7 @@ plugins: [
 ],
 {% endhighlight %}
 
-Follow this us by adding the coverage reporter to the array of reporters:
+Follow this up by adding the coverage reporter to the array of reporters:
 
 {% highlight js %}
 reporters: ['dots', 'coverage'],
