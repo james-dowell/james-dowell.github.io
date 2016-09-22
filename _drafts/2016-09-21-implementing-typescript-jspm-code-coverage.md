@@ -128,7 +128,7 @@ The final piece of this jigsaw comes in the form of a `tsconfig.json` file, whic
 
 For the purposes of this tutorial and to keep it as simple as possible I only have 2 files in the project. An `index.ts` file and an `index.spec.ts` file.
 
-If you wish to download these files, you can do so BY CLICKING HERE (CHANGE ME)
+You can [download the finished and working files here][tutorial-files]
 
 ### Getting down to it!
 
@@ -282,6 +282,8 @@ And if we look in depth at the file..
 
 ![Typescript code coverage html report file](/images/typescript-code-coverage-tutorial-file-example.png)
 
+Remember, you can [download the source files][tutorial-files] if you wish.. just run the `npm install` task and you should be good to run the npm test scripts, which you can find in the `package.json`.
+
 ## Conclusion
 
 So to sum up, we have gone through and implemented TypeScript code coverage using JSPM, istanbul and karma-coverage. We then mapped those reports back to the original TypeScript files to make it easier to determine exactly which lines of code are tested and which are not. I hope this helps someone going forward and you have any questions or run into any issues. Please don't hesitate to get in touch using the comments section below!
@@ -291,3 +293,4 @@ So to sum up, we have gone through and implemented TypeScript code coverage usin
 [Martin Fowler on test coverage]: http://martinfowler.com/bliki/TestCoverage.html
 [karma jspm github docs]: https://github.com/Workiva/karma-jspm
 [Frank wallis's typescript loader for system js]: https://github.com/frankwallis/plugin-typescript
+[tutorial-files]: {{ site.url }}/downloads/typescript-jspm-code-coverage-tutorial-files.zip
