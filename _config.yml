@@ -19,3 +19,4 @@ permalink: /:categories/:title
 exclude: ['pattern-library']
 # Build settings
 markdown: kramdown
+show_drafts: false
