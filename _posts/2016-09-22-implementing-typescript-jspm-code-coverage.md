@@ -2,7 +2,7 @@
 layout: post
 title:  "Typescript with JSPM code coverage tutorial"
 description: "A tutorial for adding code test coverage to a JSPM typescript project with Karma"
-date:   2016-09-20 16:20:00 +0000
+date:   2016-09-22 16:20:00 +0000
 categories: typescript
 language: ts
 ---
