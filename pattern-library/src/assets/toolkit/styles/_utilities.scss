@@ -114,3 +114,30 @@
  .u-pull-right {
      float: right !important;
  }
+
+ /*
+    Distribute
+    - Aligns two elements at opposite ends of each other
+        [{first-child}           {last-child}]
+    Maybe poorly named?
+ */
+
+.u-distribute {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .no-flexbox & {
+        // fallback
+        @include cf();
+
+        & > *:first-child {
+            float: left;
+            margin-right: auto;
+        }
+
+        & > *:last-child {
+            float: right;
+        }
+    }
+}
