@@ -22,45 +22,95 @@ layout: default
 
     </div>
 
-    <div class="constrain constrain--padded">
+    <div class="post__body">
 
-        <div class="post-header">
+        <div class="constrain constrain--padded">
 
-            <h1 class="h1" itemprop="name headline">{{ page.title }}</h1>
+            <div class="post-header">
 
-            <time class="timestamp" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {{ page.date | date: "%d / %m / %Y" }}
-            </time>
+                <h1 class="h1" itemprop="name headline">{{ page.title }}</h1>
 
-            <svg class="icon icon-logo post-header__icon">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#jd-logo"></use>
-            </svg>
+                <time class="timestamp" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                    {{ page.date | date: "%d / %m / %Y" }}
+                </time>
+
+                <svg class="icon icon-logo post-header__icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#jd-logo"></use>
+                </svg>
+
+            </div>
+
+            <div class="share-post" data-fixed-share-links>
+
+                <div class="share-post__label">
+                    share post
+                </div>
+
+                <div class="share-post__icons">
+                    <ul class="list-plain share-links">
+
+                        <li class="share-links__icon">
+                            <a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}" target="_blank" class="share-links__link">
+                                <svg class="icon icon-twitter ">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="share-links__icon">
+                            <a href="http://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" class="share-links__link">
+                                <svg class="icon icon-facebook ">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="share-links__icon">
+                            <a href="https://www.linkedin.com/cws/share?url={{ site.url }}{{ page.url }}" target="_blank" class="share-links__link">
+                                <svg class="icon icon-linkedin ">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="share-links__icon">
+                            <a href="{{ site.url }}/feed.xml" class="share-links__link">
+                                <svg class="icon icon-share ">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#share"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="{{ site.baseurl }}/" class="link link--back">
+
+                <svg class="icon icon-back-arrow icon--blue-stroke">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-arrow"></use>
+                </svg>
+                <span>Back</span>
+
+            </a>
+
+            <div class="prose" itemprop="articleBody">
+
+                {{ content }}
+
+            </div>
+
+            <a href="{{ site.baseurl }}/" class="link link--back">
+
+                <svg class="icon icon-back-arrow icon--blue-stroke">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-arrow"></use>
+                </svg>
+                <span>Back</span>
+
+            </a>
 
         </div>
-
-        <a href="{{ site.baseurl }}/" class="link link--back">
-
-            <svg class="icon icon-back-arrow">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-arrow"></use>
-            </svg>
-            <span>Back</span>
-
-        </a>
-
-        <div class="prose" itemprop="articleBody">
-
-            {{ content }}
-
-        </div>
-
-        <a href="{{ site.baseurl }}/" class="link link--back">
-
-            <svg class="icon icon-back-arrow">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#back-arrow"></use>
-            </svg>
-            <span>Back</span>
-
-        </a>
 
     </div>
 
