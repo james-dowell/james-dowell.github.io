@@ -1,0 +1,49 @@
+.cv-experience {
+    margin-bottom: $base-spacing-unit;
+    @include cf();
+
+    h3 {
+        margin-bottom: 0;
+        font-family: $ff-sans;
+        font-style: italic;
+    }
+
+    small {
+        display: block;
+        margin-bottom: 10px;
+        font-style: italic;
+        color: $c-medium-grey;
+    }
+}
+
+.cv-experience__link {
+    float: right;
+}
+
+.cv-experience--uvd {
+    h3 {
+        color: $c-uvd;
+    }
+
+    .cv-experience__link {
+        color: $c-uvd;
+
+        &:after {
+            background: $c-uvd;
+        }
+    }
+}
+
+.cv-experience--langer {
+    h3 {
+        color: $c-langer;
+    }
+
+    .cv-experience__link {
+        color: $c-langer;
+
+        &:after {
+            background: $c-langer;
+        }
+    }
+}
