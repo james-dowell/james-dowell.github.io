@@ -104,9 +104,11 @@ Testing has been a huge part of every project I have worked on. So much so that 
     <small>2010 - 2014</small>
 
     <p>
-        Donec vestibulum nisl eu mauris molestie, nec efficitur ex vehicula.
-        Etiam suscipit massa libero, nec placerat odio luctus id.
-        Duis egestas sem dui, at hendrerit urna dignissim ut.
+        After finishing sixth-form I chose to got to Staffordshire University to complete a BSc (Hons) in Web Development, in which I graduated with a First Class (Hons) degree. During my time there I touched a number of subjects in the every increasing skill buffet that is web development.
+    </p>
+
+    <p>
+        From database management and backend languages like PHP and ASP.NET (Razor) to Front-end skills including HTML, CSS and JavaScript.
     </p>
 
 </div>
@@ -117,15 +119,13 @@ Testing has been a huge part of every project I have worked on. So much so that 
     <small>2002 - 2010</small>
 
     <p>
-        Donec vestibulum nisl eu mauris molestie, nec efficitur ex vehicula.
-        Etiam suscipit massa libero, nec placerat odio luctus id.
-        Duis egestas sem dui, at hendrerit urna dignissim ut.
+        I studied for a number of years at TBSHS, learning many life experiences and staying on to complete A-levels in Design Technology and IT. I always had a passion for building things, from products to buildings I new I always wanted to be in a creative industry
     </p>
 
 </div>
 
 ## Personal
 
-On a personal note, some of my hobbies include ...
+On a personal note, some of my hobbies include running, travelling, skiing and football. I enjoy experiencing new things and like to make a point of trying something new at least once a fortnight e.g. a new restaurant or event in the city.
 
 I have also been involved in producing/recording a number of podcasts with some of the team at UVD. Initially starting out as the UVD podcast, which later transformed into End2End FM. We covered a wide range of topics from user experience to front-end and backend development technologies.
