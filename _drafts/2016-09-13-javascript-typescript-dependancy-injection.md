@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Implementing code coverage in a typescript project with JSPM"
+title:  "Typescript Dependancy Injection"
 description: "A tutorial for adding code test coverage to a JSPM typescript project with Karma"
-date:   2016-09-10 16:20:00 +0000
+date:   2016-09-25 16:20:00 +0000
 categories: typescript
 language: ts
 ---
@@ -24,7 +24,7 @@ Quote here rather than reinvent the wheel - (link to source)
 
 ### Which one to pick
 
-link eg [remap-istanbul][remap-istanbul] 
+link eg [remap-istanbul][remap-istanbul]
 
 
 [remap-istanbul]: [https://github.com/SitePen/remap-istanbul]

@@ -2,51 +2,34 @@
  * Toolkit JavaScript
  */
 
-'use strict';
+ import throttle from 'lodash.throttle';
 
-// Toggle modifiers
+document.addEventListener('DOMContentLoaded', () => {
 
-(function(){
-
-    // Bit of an experiment here
-
-    function $$(selector, scope) {
-        if(scope){
-            return scope.querySelectorAll(selector);
-        }else{
-            return document.querySelectorAll(selector);
-        }
-
+    function isMediumBreakpoint() {
+        return window.innerWidth > 720;
     }
 
-    var groups = Array.prototype.slice.call($$('.f-item-group'), 0);
+    const postShareLinks = document.querySelector('.share-post[data-fixed-share-links]');
 
-    groups.forEach(function(group){
+    if (postShareLinks) {
+        const postBody = document.querySelector('.post__body');
+        let status = null;
+        let shouldBeActive = isMediumBreakpoint();
 
-        var modifiers = Array.prototype.slice.call($$('.f-item-notes code', group), 0);
+        window.addEventListener('scroll', throttle(() => {
+            if (shouldBeActive && postBody.getBoundingClientRect().top < 0 && !status) {
+                postShareLinks.classList.add('share-post--fixed');
+                status = 'fixed';
+            } else if (shouldBeActive && postBody.getBoundingClientRect().top > 0 && status === 'fixed') {
+                postShareLinks.classList.remove('share-post--fixed');
+                status = null;
+            }
+        }, 10), false);
 
-        var object = group.querySelector('.f-item-preview > *:first-child');
+        window.addEventListener('resize', throttle(() => {
+            shouldBeActive = isMediumBreakpoint();
+        }, 100), false);
+    }
 
-            modifiers.forEach(function(modifier){
-
-                modifier.addEventListener('click', function() {
-
-                    var cssClassName = modifier.innerText.replace('.','');
-
-                    //remove old modifier
-                    modifiers.forEach(function(modifier){
-                        var modifierCssClassName = modifier.innerText.replace('.','');
-
-                        if(cssClassName !== modifierCssClassName && object.classList.contains(modifierCssClassName)){
-                            object.classList.remove(modifierCssClassName);
-                        }
-                    });
-
-                    // add new modifier
-                    object.classList.toggle(cssClassName);
-                });
-
-            });
-    });
-
-})();
+});

@@ -148,6 +148,12 @@ gulp.task('favicon', function () {
 		.pipe(gulp.dest(config.dest));
 });
 
+gulp.task('copy:assets', function () {
+	return gulp.src('./dist/assets/toolkit/scripts/toolkit.js')
+		.pipe(gulp.dest('../js'));
+
+});
+
 
 // assemble
 gulp.task('assemble', function (done) {
@@ -224,7 +230,8 @@ gulp.task('default', ['clean'], function () {
 		'fonts',
 		'images',
 		'icons',
-		'assemble'
+		'assemble',
+		'copy:assets'
 	];
 
 	// run build
