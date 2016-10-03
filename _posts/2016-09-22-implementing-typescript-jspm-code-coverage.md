@@ -5,6 +5,8 @@ description: "A tutorial for adding code test coverage to a JSPM typescript proj
 date:   2016-09-22 16:20:00 +0000
 categories: typescript
 language: ts
+
+shareImage: /images/typescript-twitter-image.png
 ---
 
 In this tutorial we will learn how to implement Karma code coverage to a front-end project that uses SystemJS and JSPM, developed in Typescript (which is becoming increasingly popular in large scale front-end clients).
