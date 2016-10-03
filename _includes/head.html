@@ -17,7 +17,7 @@
     <meta name="twitter:description" content="{{ page.description }}">
 
     {% if page.shareImage %}
-        <meta name="twitter:image" content="{{ page.shareImage | prepend: site.baseurl }}">
+        <meta name="twitter:image" content="{{ site.url }}{{ page.shareImage }}">
     {% endif %}
-    
+
 </head>
