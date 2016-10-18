@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Typescript Dependancy Injection"
-description: ""
+title:  "Typescript Dependancy Injection Basic Tutorial"
+description: "A basic tutorial of how to implement dependency injection in TypeScript, we look at some basic examples of depenedency injection using InversifyJS and DI-TS"
 date:   2016-09-25 16:20:00 +0000
 categories: typescript
 language: ts
@@ -11,7 +11,7 @@ Dependancy injection is a common feature in programming languages and became pop
 
 We're going to take a look at some of the latest dependancy injection libraries for [TypeScript][typescript-homepage], (A superset of JavaScript).
 
-## What is dependancy injection
+## What is dependancy injection?
 
 ### What are the benefits of dependancy injection?
 
@@ -32,10 +32,12 @@ In the words of the InversifyJS developers:
 
 ### Di.js / Di-Ts
 
+Di-Ts is a TypeScript implementation of the Di.js Depenedency Injection library that was used in Angular 1.x versions.
+
 
 ### Which one to pick
 
-link eg [remap-istanbul][remap-istanbul]
+Having been involved with a projects which used both of these libraries, I would go out an say that InversifyJS is probably the better choice. It's more up to date and well supported. It also allows the use of Symbols and other more advanced features that TypeScript provides to make dealing with larger projects more manageable.
 
 
 [typescript-homepage]: https://www.typescriptlang.org/
