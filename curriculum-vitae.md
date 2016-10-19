@@ -128,4 +128,6 @@ Testing has been a huge part of every project I have worked on. So much so that 
 
 On a personal note, some of my hobbies include running, travelling, skiing and football. I enjoy experiencing new things and like to make a point of trying something new at least once a fortnight e.g. a new restaurant or event in the city.
 
-I have also been involved in producing/recording a number of podcasts with some of the team at UVD. Initially starting out as the UVD podcast, which later transformed into End2End FM. We covered a wide range of topics from user experience to front-end and backend development technologies.
+I have also been involved in producing/recording a number of podcasts with some of the team at UVD. Initially starting out as the UVD podcast, which later transformed into [End2End FM][end-to-end]. We covered a wide range of topics from user experience to front-end and backend development technologies.
+
+[end-to-end]: http://www.endtoend.fm/
