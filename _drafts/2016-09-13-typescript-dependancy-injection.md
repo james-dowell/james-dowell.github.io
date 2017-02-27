@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Typescript Dependancy Injection Basic Tutorial"
-description: "A basic tutorial of how to implement dependency injection in TypeScript, we look at some basic examples of depenedency injection using InversifyJS and DI-TS"
+description: "A basic tutorial of how to implement dependency injection in TypeScript, we look at some basic examples of dependency injection using InversifyJS and DI-TS"
 date:   2016-09-25 16:20:00 +0000
 categories: typescript
 language: ts
