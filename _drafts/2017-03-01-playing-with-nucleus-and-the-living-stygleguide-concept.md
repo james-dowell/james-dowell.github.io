@@ -1,20 +1,21 @@
 ---
 layout: post
-title:  "Playing with Nucleus and the living styleguide concept"
-description: "A basic tutorial of how to implement dependency injection in TypeScript, we look at some basic examples of depenedency injection using InversifyJS and DI-TS"
+title:  "My opinion on the best living styleguide tools and pattern libraries"
+description: "In this article I'll be touching upon what a styleguide / pattern-library is, why they're really useful and what my favourite tool to use is!"
 date:   2017-02-26 16:20:00 +0000
 categories: typescript
 language: scss
 ---
 
-In this article I'll be touching upon what a styleguide / pattern-library is and why they're really useful for both new and existing projects.
+In this article I'll be touching upon what a styleguide / pattern-library is, why they're really useful and what my favourite tool to use is!
 
 ## What is a Styleguide / Pattern Library
 
+The idea of a styleguide
 
+### Atomic design
 
-### Composite design vs Atomic design
-
+Styleguides tend to follow some form of atomic design pattern whether it's in the traditional 'atoms', 'molecules' and 'organism'
 
 Nucleus is a stylguide tool/generator developer by the 'Pirates' at HolidayPirates to generate a living styleguide. Styleguides, or pattern libraries as they are sometimes known, are really useful tools for building out and styling views or components for both SPA (Single Page Applications) and traditional websites alike. In this article I'm going to touch up what Styleguides are, why they are useful and how Nucleus is the best incarnation yet of a living Styleguide.
 
@@ -27,10 +28,21 @@ The ideology of a living styleguide is the idea that your markup can be shared b
 
 ## Existing styleguide tools
 
+
+
+### Fabricator
+
+[Fabricator.io][fabricator-website]
+
 In the past .. Fabricator
 
 ### Nucleus
 
+[Nucleus github][nucleus-website]
+
 Nucleus and its differences
 
 ## Conclusion
+
+[fabricator-website]: https://fbrctr.github.io/
+[nucleus-website]: https://holidaypirates.github.io/nucleus/
