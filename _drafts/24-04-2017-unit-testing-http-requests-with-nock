@@ -1,1 +1,13 @@
+---
+layout: post
+title:  "Unit testing http requests with Nock"
+description: ""
+date:   2017-04-24 10:20:00 +0000
+categories: unit testing
+language: js
+---
+
 Unit testing http requests with Nock
+
+Resources:
+- https://github.com/reactjs/redux/blob/master/docs/recipes/WritingTests.md
